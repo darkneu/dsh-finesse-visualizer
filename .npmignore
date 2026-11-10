@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+dist/
+.github/
+release/
+PUBLISHING.md
+.DS_Store

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="140" viewBox="0 0 160 140">
+<defs>
+  <linearGradient id="case" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7f93a6"/><stop offset=".35" stop-color="#3e4f61"/><stop offset="1" stop-color="#141c26"/></linearGradient>
+  <radialGradient id="lens" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#dff3ff"/><stop offset=".35" stop-color="#7ab6dc"/><stop offset=".7" stop-color="#2c5f80"/><stop offset="1" stop-color="#0e2231"/></radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<rect x="10" y="14" width="140" height="106" rx="11" fill="url(#case)" stroke="#0b1118" stroke-width="2"/>
+<rect x="18" y="22" width="124" height="90" rx="7" fill="#1b2430" stroke="#0a1016"/>
+<circle cx="80" cy="68" r="33" fill="url(#lens)" stroke="#0c1a24" stroke-width="2"/>
+<circle cx="80" cy="68" r="22" fill="none" stroke="#a8d4ee" stroke-width="2" opacity=".6"/>
+<circle cx="80" cy="68" r="10" fill="#0b1a24" opacity=".75"/>
+<path d="M60 48 C 68 40 86 40 96 48" stroke="#ffffff" stroke-width="4" opacity=".5" fill="none"/>
+<circle cx="132" cy="32" r="3.4" fill="#54c08a"/>
+<rect x="24" y="92" width="24" height="12" rx="2" fill="#0e1720" stroke="#33465a"/>
+</svg>

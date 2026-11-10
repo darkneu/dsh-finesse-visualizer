@@ -1,0 +1,63 @@
+{
+  "name": "dsh-finesse-visualizer",
+  "version": "1.0.0",
+  "description": "Finesse 3 KatScript visualization and a drag-and-drop optical bench designer for DeepSeek Harness.",
+  "type": "module",
+  "main": "index.js",
+  "license": "GPL-3.0-only",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "finesse",
+    "katscript",
+    "optics",
+    "interferometer",
+    "visualization"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "python",
+    "assets",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "author": "darkneu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkneu/dsh-finesse-visualizer.git"
+  },
+  "homepage": "https://github.com/darkneu/dsh-finesse-visualizer#readme",
+  "bugs": {
+    "url": "https://github.com/darkneu/dsh-finesse-visualizer/issues"
+  }
+}

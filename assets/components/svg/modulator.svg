@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+<defs>
+  <linearGradient id="case" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aaebe"/><stop offset=".3" stop-color="#46586a"/><stop offset="1" stop-color="#151d27"/></linearGradient>
+  <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8c9"/><stop offset=".45" stop-color="#ffd24d"/><stop offset="1" stop-color="#d68a12"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset="1" stop-color="#b58a1a"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<rect x="10" y="16" width="130" height="116" rx="10" fill="url(#case)" stroke="#0b1118" stroke-width="2"/>
+<rect x="20" y="26" width="110" height="96" rx="7" fill="#1b2430" stroke="#0a1016"/>
+<rect x="34" y="42" width="82" height="64" rx="4" fill="url(#crystal)" stroke="#a86d0c" stroke-width="2"/>
+<rect x="28" y="28" width="94" height="10" rx="3" fill="url(#gold)" stroke="#7a5a10"/>
+<rect x="28" y="110" width="94" height="10" rx="3" fill="url(#gold)" stroke="#7a5a10"/>
+<circle cx="33" cy="33" r="3.4" fill="#fff3c4" stroke="#7a5a10"/>
+<circle cx="117" cy="33" r="3.4" fill="#fff3c4" stroke="#7a5a10"/>
+<circle cx="33" cy="115" r="3.4" fill="#fff3c4" stroke="#7a5a10"/>
+<circle cx="117" cy="115" r="3.4" fill="#fff3c4" stroke="#7a5a10"/>
+<circle cx="141" cy="74" r="7" fill="url(#gold)" stroke="#7a5a10"/>
+<rect x="132" y="70" width="10" height="8" fill="#b58a1a"/>
+<line x1="40" y1="74" x2="110" y2="74" stroke="#fffdf0" stroke-width="1.4" opacity=".55"/>
+</svg>

@@ -1,0 +1,43 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install pnpm
+        run: npm install -g pnpm@11
+
+      - name: Pack
+        run: pnpm pack --pack-destination dist
+
+      # The market's tarball URL uses a version-free asset name:
+      # releases/latest/download/dsh-finesse-visualizer.tgz
+      - name: Give the asset its stable name
+        run: cp dist/dsh-finesse-visualizer-*.tgz dist/dsh-finesse-visualizer.tgz
+
+      - name: Create the GitHub release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/dsh-finesse-visualizer.tgz
+          generate_release_notes: true
+
+      - name: Publish to npm
+        if: env.NODE_AUTH_TOKEN != ''
+        run: pnpm publish --access public --no-git-checks

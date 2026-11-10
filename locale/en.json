@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Finesse visualizer",
+    "description": "Detects Finesse/KatScript in the conversation and renders the optical layout, Gaussian beam, detector readouts and CCD field automatically."
+  }
+}

@@ -1,0 +1,7 @@
+# One process-wide Host row. The entry name is path-relative on purpose: DSH
+# anchors a relative name beside the patch file, so this row loads this bundle's
+# own index.js whether it is installed as node_modules/dsh-finesse-visualizer
+# from npm, from a GitHub release tarball, or linked from a local checkout.
+- insert:
+    - id: finesse-visualizer
+      name: './index.js'

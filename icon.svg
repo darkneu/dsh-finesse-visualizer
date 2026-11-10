@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Finesse visualizer">
+  <rect width="64" height="64" rx="14" fill="#101d2b"/>
+  <path d="M13 32h14" stroke="#e05d4b" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="13" cy="32" r="3.4" fill="#e05d4b"/>
+  <path d="M27 32h12" stroke="#5aa9e6" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M39 32 47 24M39 32 47 40" stroke="#5aa9e6" stroke-width="2.2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M47 22v20" stroke="#b07cd6" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M51 32h3" stroke="#54c08a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="39" cy="32" r="2.6" fill="#f4f7fa"/>
+  <path d="M13 45h38" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M20 49h24" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+</svg>

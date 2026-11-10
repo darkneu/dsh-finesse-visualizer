@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Finesse 可视化",
+    "description": "在对话中识别 Finesse/KatScript 代码，自动生成光学布局、高斯光束、探测器读数与 CCD 光强图像。"
+  }
+}

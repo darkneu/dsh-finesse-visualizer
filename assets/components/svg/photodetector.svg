@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="150" viewBox="0 0 110 150">
+<defs>
+  <linearGradient id="house" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#94a7b9"/><stop offset=".35" stop-color="#4a5c70"/><stop offset="1" stop-color="#141c26"/></linearGradient>
+  <linearGradient id="dome" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset=".4" stop-color="#f39c12"/><stop offset=".8" stop-color="#d0342c"/><stop offset="1" stop-color="#8e1b13"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".5" stop-color="#d4af37"/><stop offset="1" stop-color="#8f6d10"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<rect x="12" y="38" width="36" height="86" rx="8" fill="url(#house)" stroke="#0b1118" stroke-width="2"/>
+<ellipse cx="48" cy="81" rx="11" ry="45" fill="url(#gold)" stroke="#6f540c"/>
+<path d="M48 33 C 96 38 108 62 108 81 C 108 100 96 124 48 129 Z" fill="url(#dome)" stroke="#7c1a12" stroke-width="2"/>
+<path d="M56 40 C 84 46 94 62 94 72" stroke="#ffffff" stroke-width="6" opacity=".45" fill="none"/>
+<rect x="42" y="34" width="7" height="94" rx="3" fill="#0e1720" opacity=".9"/>
+<rect x="22" y="44" width="16" height="20" rx="2" fill="#1b2733" opacity=".8"/>
+</svg>

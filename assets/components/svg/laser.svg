@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="110" viewBox="0 0 180 110">
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5d70"/><stop offset=".35" stop-color="#2b3746"/><stop offset="1" stop-color="#151d27"/></linearGradient>
+  <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#93a6b8"/><stop offset=".5" stop-color="#5d7186"/><stop offset="1" stop-color="#2a3543"/></linearGradient>
+  <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5b0d08"/><stop offset=".35" stop-color="#c0392b"/><stop offset=".8" stop-color="#ff6a52"/><stop offset="1" stop-color="#ffd9c9"/></linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1c22"/><stop offset="1" stop-color="#071013"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="glow" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="10" y="20" width="160" height="70" rx="9" fill="url(#body)" stroke="#0b1118" stroke-width="2"/>
+<rect x="14" y="11" width="152" height="11" rx="5" fill="url(#rail)" stroke="#0b1118" stroke-width="1.5"/>
+<rect x="14" y="86" width="152" height="11" rx="5" fill="url(#rail)" stroke="#0b1118" stroke-width="1.5"/>
+<rect x="22" y="32" width="60" height="46" rx="4" fill="#111a24" stroke="#0a1016"/>
+<rect x="27" y="37" width="50" height="22" rx="2" fill="url(#screen)"/>
+<circle cx="32" cy="69" r="3.2" fill="#54c08a"/>
+<circle cx="45" cy="69" r="3.2" fill="#c0392b" opacity=".85"/>
+<rect x="58" y="66" width="18" height="5" rx="2" fill="#5d7186"/>
+<rect x="88" y="36" width="80" height="36" rx="12" fill="url(#tube)" filter="url(#glow)" opacity=".96"/>
+<rect x="88" y="36" width="80" height="36" rx="12" fill="none" stroke="#7c1a12" stroke-width="1.6"/>
+<ellipse cx="166" cy="54" rx="4" ry="13" fill="#ffe8dd" opacity=".9"/>
+<path d="M18 26 H162" stroke="#b9c9d8" stroke-width="1.4" opacity=".5"/>
+</svg>
