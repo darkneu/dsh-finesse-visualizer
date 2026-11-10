@@ -9,12 +9,16 @@ readout/sweep and CCD intensity.
 Requires DSH `>=0.2.1-rc.2` and a Python interpreter that can `import finesse`
 (Finesse 3, NumPy, Matplotlib).
 
-```sh
-# npm
-dsh plugin --profile <profile> add dsh-finesse-visualizer
+From the GitHub release (available now, no npm account needed):
 
-# or from the GitHub release tarball (no npm account needed)
+```sh
 dsh plugin --profile <profile> add https://github.com/darkneu/dsh-finesse-visualizer/releases/latest/download/dsh-finesse-visualizer.tgz
+```
+
+From npm (once `dsh-finesse-visualizer` has been published there):
+
+```sh
+dsh plugin --profile <profile> add dsh-finesse-visualizer
 ```
 
 A local checkout can be handed to the DSH plugin manager directly. After the

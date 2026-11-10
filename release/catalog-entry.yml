@@ -1,6 +1,6 @@
 # One entry for awesome-dsh-plugin/awesome-dsh-plugin.
 # Copy this file to data/plugins/darkneu__dsh-finesse-visualizer.yml in that
-# repository (a single-file PR) and replace darkneu with the GitHub account.
+# repository (a single-file PR).
 url: https://github.com/darkneu/dsh-finesse-visualizer
 name: darkneu/dsh-finesse-visualizer
 category: ui
