@@ -85,12 +85,16 @@ Finesse/KatScript message gets the visualization card at the end of its turn.
 - A packed tarball in `dist/`:
 
   ```
-  dist/dsh-finesse-visualizer-1.0.0.tgz
-  SHA-256: 4f78021e29390803ca7d0e6bdd05ca838c53a93ec82715c337ada825e2a67667
+  local build:              dist/dsh-finesse-visualizer-1.0.0.tgz
+  SHA-256 (macOS):          4f78021e29390803ca7d0e6bdd05ca838c53a93ec82715c337ada825e2a67667
+  GitHub release asset:     dsh-finesse-visualizer.tgz (v1.0.0)
+  SHA-256 (CI, Linux):      3fa768be22c34a1d17be2a870c30cbfd69646829d7397cfb02464279a83a1d52
   ```
 
-  Verify with `shasum -a 256 dist/dsh-finesse-visualizer-1.0.0.tgz` (or
-  `sha256sum`). `release/SHA256SUMS` carries the same line.
+  The two hashes differ because pnpm records platform metadata while packing;
+  both tarballs contain the same 37 files and package identity. Verify the
+  published asset with `curl -sL .../dsh-finesse-visualizer.tgz | shasum -a 256`.
+  `release/SHA256SUMS` carries both lines.
 
 ## Credential options
 
