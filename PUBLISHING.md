@@ -1,8 +1,8 @@
 # Publishing `dsh-finesse-visualizer`
 
 The GitHub half is published under `darkneu/dsh-finesse-visualizer`; this file
-stays as the maintainer guide for future releases. npm needs a separate login
-(this machine had none when the release was cut), and the catalog PR must wait
+stays as the maintainer guide for future releases. npm is still pending (this
+machine had no npm login when the release was cut), and the catalog PR must wait
 until the repository is at least one day old.
 
 ## 1. GitHub repository and release
@@ -17,9 +17,10 @@ git push origin v1.0.0
 ```
 
 - Add the `dsh-plugin` topic to the repository (catalog requirement).
-- The `v1.0.0` tag runs `.github/workflows/release.yml`. It packs the package,
+- The `v1.0.0` tag runs `.github/workflows/release.yml`. It packs the package and
   uploads `dsh-finesse-visualizer.tgz` as a release asset (the stable name the
-  catalog points at) and then publishes to npm if the `NPM_TOKEN` secret exists.
+  catalog points at). It does **not** publish to npm; that is a separate manual
+  step, so a release never fails because npm credentials are absent.
 - The repository must be at least one day old before the catalog PR; that is a
   catalog rule, not a technical one. Submit the entry after that window.
 
